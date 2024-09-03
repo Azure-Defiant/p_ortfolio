@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Responsive Portfolio Web Design</title>
+    <!--font awsome cdn font icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i>
+                    <div class="logo-text">Sherwin Josh Aquino</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Hobby</a></li>  
+                        <li><a href="playlist.html">My Music Playlist</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="VIRUS.png" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Mobile Developer</span></h5>
+                    <h1>Sherwin Josh Aquino</h1>
+                    <p>
+                        Hi, I'm a passionate mobile developer with a strong focus on creating intuitive and user-friendly applications. My goal is to merge cutting-edge technology with seamless design, ensuring every project not only meets but exceeds user expectations. I thrive on challenges and continuously strive to innovate, delivering high-quality apps that make a difference.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Interact</a>
+                        <a href="" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/sherwin.aquino.10297/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/dumplingsowaowa/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Azure-Defiant"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--js typing effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    
+    <script>
+        /* crt btn click show hide navbar xdxd*/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Mobile Developer","Mobile Developer","2nd year Student","2nd year Student"],
+            typedSpeed:200,
+            backSpeed:100,
+            loop:true
+        })
+
+    </script>
+</body>
+</html>
